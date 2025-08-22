@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -23,6 +23,12 @@ export default function Header() {
   const navigate = useNavigate();
   
   const { user, isAuthenticated, theme, toggleTheme, logout } = useStore();
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+    }
+  }, [theme]);
 
   const navigation = [
     { name: 'Home', href: '/', icon: Home },
@@ -139,7 +145,7 @@ export default function Header() {
               </div>
             ) : (
               <Link
-                to="/login"
+                to="/"
                 className="hidden sm:inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
               >
                 Sign in

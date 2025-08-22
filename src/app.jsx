@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Dashboard from "./pages/dashboard";
 import Settings from "./pages/settings";
+import Profile from "./pages/profile";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </main>
         <Toaster

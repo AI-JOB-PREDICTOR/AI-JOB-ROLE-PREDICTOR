@@ -81,9 +81,9 @@ export default function Dashboard() {
         ],
         listTitle: 'Recent Applicants',
         items: [
-          { id: 1, title: 'Frontend Engineer', company: 'Tech Corp', location: 'Remote', salary: '$100k - $140k', matchScore: 91, skills: ['React', 'TypeScript', 'Tailwind'], status: 'Shortlisted' },
-          { id: 2, title: 'Data Analyst', company: 'DataWorks', location: 'NY, USA', salary: '$80k - $110k', matchScore: 79, skills: ['SQL', 'Python', 'Tableau'], status: 'Under Review' },
-          { id: 3, title: 'Product Manager', company: 'Buildify', location: 'SF, USA', salary: '$120k - $160k', matchScore: 85, skills: ['Strategy', 'Agile', 'Communication'], status: 'Interviewing' }
+          { id: 1, title: 'Junior Frontend Engineer', company: 'Tech Corp', location: 'thanjavur', salary: '$100k - $140k', matchScore: 91, skills: ['React', 'TypeScript', 'Tailwind'], status: 'Shortlisted' },
+          { id: 2, title: 'Data Analyst', company: 'DataWorks', location: 'America', salary: '$80k - $110k', matchScore: 79, skills: ['SQL', 'Python', 'Tableau'], status: 'Under Review' },
+          { id: 3, title: 'Product Manager', company: 'Buildify', location: 'USA', salary: '$120k - $160k', matchScore: 85, skills: ['Strategy', 'Agile', 'Communication'], status: 'Interviewing' }
         ],
         tabs: [
           { id: 'overview', label: 'HR Overview', icon: BarChart3 },
@@ -106,7 +106,7 @@ export default function Dashboard() {
       ],
       listTitle: 'Recommended Roles',
       items: [
-        { id: 1, title: 'Junior Software Engineer', company: 'InnovateX', location: 'Remote', salary: '$70k - $95k', matchScore: 93, skills: ['JavaScript', 'React', 'Git'], status: 'Recommended' },
+        { id: 1, title: ' Software Engineer', company: 'InnovateX', location: 'Remote', salary: '$70k - $95k', matchScore: 93, skills: ['JavaScript', 'React', 'Git'], status: 'Recommended' },
         { id: 2, title: 'Data Scientist (Entry)', company: 'Insights AI', location: 'Austin, TX', salary: '$85k - $110k', matchScore: 81, skills: ['Python', 'Pandas', 'ML'], status: 'Good Match' },
         { id: 3, title: 'Business Analyst', company: 'Acme Co', location: 'Bengaluru', salary: '₹8L - ₹14L', matchScore: 77, skills: ['Excel', 'SQL', 'Communication'], status: 'Consider' }
       ],
